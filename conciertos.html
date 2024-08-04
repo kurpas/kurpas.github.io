@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Próximos Conciertos - Mutantes</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f4f4f4;
+        }
+        header {
+            background-color: #000;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 2em 0;
+        }
+        header img {
+            max-width: 1000px;
+            height: auto;
+        }
+        nav {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            color: #f4f4f4;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff4081;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            text-align: center; /* Centra el contenido de la sección */
+        }
+        .section h2 {
+            color: #ff4081;
+            border-bottom: 2px solid #ff4081;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .concert-dates {
+            list-style: none;
+            padding: 0;
+        }
+        .concert-dates li {
+            background-color: #1e1e1e;
+            margin: 0 auto; /* Centra el elemento en su contenedor */
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            text-align: center; /* Centra el texto dentro del elemento */
+            max-width: 800px; /* Aumenta el ancho máximo del recuadro */
+        }
+        .concert-dates li:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #000;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="resources/mut_solo.jpeg" alt="Logo de Mutantes">
+        <h1></h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="conciertos.html">Próximos Conciertos</a>
+        <a href="musica.html">Escucha Nuestra Música</a>
+    </nav>
+    <div class="container">
+        <div id="conciertos" class="section">
+            <h2>Próximos Conciertos</h2>
+            <ul class="concert-dates">
+                <li>
+                    <p>Próximamente anunciaremos las nuevas fechas de nuestros conciertos. ¡Mantente atento!</p>
+                    <strong>Detalles:</strong> Seguinos en nuestras redes.
+                </li>
+                <!-- Agrega más conciertos aquí -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mutantes. Todos los derechos reservados.</p>
+        <p>Contacta con nosotros: <a href="mailto:mutantesargentina@gmail.com">mutantesargentina@gmail.com</a></p>
+        <p>
+            <a href="https://www.facebook.com/megustamutantes" target="_blank" title="Síguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/_mutantes_/" target="_blank" title="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/4Xn9LMZ26uLjMT56qamvQm?si=dQ-unBpQQlScINTCalCwbw" target="_blank" title="Síguenos en Spotify"><i class="fab fa-spotify"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
+
