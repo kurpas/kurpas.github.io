@@ -20,7 +20,7 @@
             padding: 2em 0;
         }
         header img {
-            max-width: 1000px;
+            max-width: 100%; /* Ajuste de tamaño */
             height: auto;
         }
         nav {
@@ -44,7 +44,7 @@
         }
         .section {
             margin-bottom: 40px;
-            text-align: center; /* Centra el contenido de la sección */
+            text-align: center;
         }
         .section h2 {
             color: #ff4081;
@@ -61,13 +61,13 @@
         }
         .concert-dates li {
             background-color: #1e1e1e;
-            margin: 0 auto; /* Centra el elemento en su contenedor */
+            margin: 0 auto;
             padding: 15px;
             border: 1px solid #333;
             border-radius: 5px;
             transition: transform 0.3s;
-            text-align: center; /* Centra el texto dentro del elemento */
-            max-width: 800px; /* Aumenta el ancho máximo del recuadro */
+            text-align: center;
+            max-width: 800px;
         }
         .concert-dates li:hover {
             transform: scale(1.05);
@@ -77,13 +77,55 @@
             color: #f4f4f4;
             text-align: center;
             padding: 1em 0;
-            position: fixed;
+            position: relative; /* Cambiado de fixed a relative */
             width: 100%;
             bottom: 0;
         }
         footer a {
             color: #ff4081;
             text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                padding: 1em 0;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+
+            .concert-dates li {
+                padding: 10px;
+            }
+
+            footer {
+                padding: 0.5em 0;
+            }
+
+            footer a {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
@@ -121,4 +163,3 @@
     </footer>
 </body>
 </html>
-
